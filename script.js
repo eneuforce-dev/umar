@@ -11,12 +11,6 @@ navLinks.querySelectorAll('a').forEach(link => {
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
-document.getElementById('contactForm').addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('Thanks! Your message has been noted.');
-  e.target.reset();
-});
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
